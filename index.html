@@ -1,0 +1,1344 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+	
+	<link rel="shortcut icon" href="img/favicon.png">
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BlocksMC Server</title>
+	<meta name="keywords" content="minecraft server">
+	<meta name="description" content="">
+	<meta name="Author" content="BlocksHost [BlocksHost.Com]">
+	
+    <!--    Font Awesome  -->
+    <!--script src="https://use.fontawesome.com/0d5f58ee5f.js"></script-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--   Jquery 3.2.1 -->
+    <script src="js/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <!--   Bootstrap V4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="js/tether.min.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!--   Cairo Font [Arabic / English ] -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript">
+	_atrk_opts = { atrk_acct:"n9A9j1a4ZP00Ma", domain:"blocksmc.com",dynamic: true};
+	(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+	</script>
+	<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=n9A9j1a4ZP00Ma" style="display:none" height="1" width="1" alt="" /></noscript>
+        <script data-ad-client="ca-pub-6856314510731577" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+<body>
+
+<nav class="navbar navbar-toggleable-lg fixed-top navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" style="border: none;outline: none;font-size: 32px;color: white;" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img src="img/logo-gray-sm.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span class="navbar-brand-text">BlocksMC</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav  mt-2 mt-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المتجر</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="store">رئيسية المتجر</a>
+                    <a class="dropdown-item" href="store/orders">سجل الطلبات</a>
+                    <a class="dropdown-item" href="store/bcredits">BCredits</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="games">الألعاب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="players">اللاعبين</a>
+            </li>
+
+            <li class="nav-item dropdown">
+
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الدعم</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://blocksmc.com/discordsupport">Discord</a>
+                    <!--a class="dropdown-item" href="tickets/create">إنشاء تذكرة</a-->
+                    <!--a class="dropdown-item" href="tickets/create/lostaccount">فقدان حساب</a-->
+                                    </div>
+            </li>
+
+            
+        </ul>
+        <ul class="navbar-nav mt-2 mr-auto mt-md-0">
+            <form class="form-inline my-2 my-lg-0" action="player.php" method="POST">
+                <input class="form-control mr-sm-1" name="pname" type="text" placeholder="IGN">
+                <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <li class="nav-item dropdown">
+
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Arabic</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/english"><img src="img/USA.png" alt=""> English</a>
+                    <a class="dropdown-item" href="/arabic"><img src="img/Saudi%20Arabia.png" alt=""> العربية</a>
+                </div>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link" href="login">تسجيل الدخول</a>
+            </li>
+                    </ul>
+    </div>
+</nav>
+
+<div style="height: 50px;"></div>
+
+<script>
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 56) {
+            $('.navbar').addClass('scrolled-nav');
+
+        } else {
+            $('.navbar').removeClass('scrolled-nav');
+        }
+    });
+</script>
+<div class="sub-header" style="background: linear-gradient(rgba(0, 104, 164, 0.00), #002335), url(&amp;#x27;img/subheader.jpeg&amp;#x27;) no-repeat center center;background-size: cover;">
+    <div class="sub-header-top">
+        <h1><i class="fa fa-angle-double-left"></i> BlocksMC <i class="fa fa-angle-double-right"></i></h1>
+    </div>
+    <h1>اللاعبين</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <!--br>
+            <div class="sep">
+                <p><i class="fa fa-play" aria-hidden="true"></i> Featured Community Video</p>
+            </div>
+            <br>
+
+            <iframe width="100%" height="410" src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+            -->
+
+            <br>
+            <div class="sep">
+                <p><svg style="width: 16px;height: 16px;" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 955.89 999.38"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M821.36,63.29v.39H.11V62C.11,28.1,32.14.62,71.67.62H663.49C734.78,7.64,793.47,31.46,821.36,63.29Z" transform="translate(-0.07 -0.62)"></path><path class="cls-1" d="M899.72,176.51v2.63H.93V116.08H873.48C885.27,130.91,894.43,151.92,899.72,176.51Z" transform="translate(-0.07 -0.62)"></path><path class="cls-1" d="M918.46,284.36c0,2.51,0,5-.12,7.44H.07V228.75H911.38A205.55,205.55,0,0,1,918.46,284.36Z" transform="translate(-0.07 -0.62)"></path><path class="cls-1" d="M910.69,342.7c-3.16,28.72-10.67,51.88-20.28,63H1v-63Z" transform="translate(-0.07 -0.62)"></path><path class="cls-1" d="M860.43,461.75c-1-.93-2-1.85-3-2.77H.07V938.74A60.71,60.71,0,0,0,35.19,994l.52.24A85.17,85.17,0,0,0,53.54,1000h554C793.82,986.21,941.9,859.69,956,701.59V652.37C949.49,579.46,914.51,513.28,860.43,461.75ZM680.56,822.56A148.7,148.7,0,0,1,575.2,866.34H282.08a149.09,149.09,0,0,1,0-298.18H575.2A149.08,149.08,0,0,1,680.62,822.67Z" transform="translate(-0.07 -0.62)"></path><path class="cls-1" d="M356.39,700.94v27a6.12,6.12,0,0,1-6.12,6.12h-51v51a6.12,6.12,0,0,1-6.12,6.12H266.24a6.11,6.11,0,0,1-6.11-6.12v-51h-51A6.12,6.12,0,0,1,203,728v-27a6.12,6.12,0,0,1,6.12-6.12h51V644a6.11,6.11,0,0,1,6.11-6.12h27a6.12,6.12,0,0,1,6.12,6.12v51h51A6.13,6.13,0,0,1,356.39,700.94Z" transform="translate(-0.07 -0.62)"></path><circle class="cls-1" cx="566.07" cy="655.18" r="27.68"></circle><circle class="cls-1" cx="566.07" cy="765.09" r="27.68"></circle><circle class="cls-1" cx="511.11" cy="710.13" r="27.68"></circle><circle class="cls-1" cx="621.01" cy="710.13" r="27.68"></circle></svg> Team</p>
+            </div>
+            <br>
+
+            <div class="row" dir="ltr">
+                                                                                                <div class="col-lg-4">
+                    <div class="player-card" data-toggle="tooltip" data-placement="top" title="vFahad_">
+                        <img class="rank-team-border" src="img/100.png" alt="">
+                        <p>vFahad_</p>
+                    </div>
+                </div>
+                                                                                                                                                                                                </div>
+
+            <br>
+            <div class="sep">
+                <p><i class="fa fa-plus" aria-hidden="true"></i> Newest Members</p>
+            </div>
+            <br>
+
+            <div class="row" dir="ltr">
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_1.png" alt="">
+                            <p>simon_r</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_5.png" alt="">
+                            <p>TestloveDimples</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_2.png" alt="">
+                            <p>nuneszxYT</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_3.png" alt="">
+                            <p>Originaux</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_4.png" alt="">
+                            <p>Nelly69</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_7.png" alt="">
+                            <p>tiny</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_6.png" alt="">
+                            <p>Stadlepanda</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_9.png" alt="">
+                            <p>Zareth</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_10.png" alt="">
+                            <p>3125216</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_8.png" alt="">
+                            <p>DaNseR</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_14.png" alt="">
+                            <p>Piriz243</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_16.png" alt="">
+                            <p>gamerzing3432</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_15.png" alt="">
+                            <p>EnigmaKiLLeR</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_19.png" alt="">
+                            <p>AFI_11</p>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4">
+                        <div class="player-card">
+                            <img src="img/100_17.png" alt="">
+                            <p>zekican2642</p>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <br>
+            <div class="sep">
+                <p><i class="fa fa-user" aria-hidden="true"></i> Owner</p>
+            </div>
+            <br>
+            <div class="player-card">
+                <img class="rank-owner-border" src="img/100_11.png" alt="">
+                <p>iDhoom</p>
+            </div>
+
+            <div class="sep">
+                <p><i class="fa fa-user" aria-hidden="true"></i> Head Admins</p>
+            </div>
+            <br>
+            <div class="player-card">
+                <img class="rank-admin-border" src="img/100_13.png" alt="">
+                <p>7sO</p>
+            </div>
+
+
+            <!--            --------------------------------->
+            <br>
+            <div class="sep">
+                <p><i class="fa fa-user" aria-hidden="true"></i> Admins &amp; Senior Mods</p>
+            </div>
+            <br>
+
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Jinaaan">
+                    <img class="rank-admin-border" src="img/100_12.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_JustMix">
+                    <img class="rank-admin-border" src="img/100_27.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Eissaa">
+                    <img class="rank-admin-border" src="img/100_28.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Mhmmd">
+                    <img class="rank-admin-border" src="img/100_18.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mohmad_q8">
+                    <img class="rank-admin-border" src="img/100_20.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Brhom">
+                    <img class="rank-admin-border" src="img/100_21.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Aliiyah">
+                    <img class="rank-admin-border" src="img/100_22.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AssassinTime">
+                    <img class="rank-admin-border" src="img/100_23.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="PerfectRod_">
+                    <img class="rank-admin-border" src="img/100_24.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Ahmmd">
+                    <img class="rank-admin-border" src="img/100_25.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xImTaiG_">
+                    <img class="rank-admin-border" src="img/100_26.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xIBerryPlayz">
+                    <img class="rank-admin-border" src="img/100_29.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="comsterr">
+                    <img class="rank-admin-border" src="img/100_30.png" alt="">
+                </div>
+            
+
+            <!--            --------------------------------->
+            <br>
+            <div class="sep">
+                <p><i class="fa fa-user" aria-hidden="true"></i> Moderators</p>
+            </div>
+            <br>
+
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Sweet">
+                    <img class="rank-mod-border" src="img/100_35.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Hussain">
+                    <img class="rank-mod-border" src="img/100_37.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Ev2n">
+                    <img class="rank-mod-border" src="img/100_32.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1M7mdz">
+                    <img class="rank-mod-border" src="img/100_33.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1F5aMH___3oo">
+                    <img class="rank-mod-border" src="img/100_45.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iMehdi_">
+                    <img class="rank-mod-border" src="img/100_44.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="EyesO_Diamond">
+                    <img class="rank-mod-border" src="img/100_31.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xMz7">
+                    <img class="rank-mod-border" src="img/100_34.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Daykel">
+                    <img class="rank-mod-border" src="img/100_36.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Aboz3bl">
+                    <img class="rank-mod-border" src="img/100_38.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="qB6o6">
+                    <img class="rank-mod-border" src="img/100_56.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Luvaa">
+                    <img class="rank-mod-border" src="img/100_40.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Boviix">
+                    <img class="rank-mod-border" src="img/100_39.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Muntadher">
+                    <img class="rank-mod-border" src="img/100_41.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="BinRashood">
+                    <img class="rank-mod-border" src="img/100_42.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ZANAD">
+                    <img class="rank-mod-border" src="img/100_43.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ixBander">
+                    <img class="rank-mod-border" src="img/100_46.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="WalriderTime">
+                    <img class="rank-mod-border" src="img/100_47.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Thenvra">
+                    <img class="rank-mod-border" src="img/100_48.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Saajed">
+                    <img class="rank-mod-border" src="img/100_49.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="CutieRana">
+                    <img class="rank-mod-border" src="img/100_50.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Bo6lalll">
+                    <img class="rank-mod-border" src="img/100_51.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="MK_F16">
+                    <img class="rank-mod-border" src="img/100_52.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1HeyImHasson_">
+                    <img class="rank-mod-border" src="img/100_53.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Onyc_">
+                    <img class="rank-mod-border" src="img/100_54.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="saad6">
+                    <img class="rank-mod-border" src="img/100_55.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iiRaivy">
+                    <img class="rank-mod-border" src="img/100_57.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="zayedk">
+                    <img class="rank-mod-border" src="img/100_58.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="baderr">
+                    <img class="rank-mod-border" src="img/100_59.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="leeleeeleeeleee">
+                    <img class="rank-mod-border" src="img/100_62.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="SeniorAziz">
+                    <img class="rank-mod-border" src="img/100_60.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="M7mmd">
+                    <img class="rank-mod-border" src="img/100_61.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Bastic">
+                    <img class="rank-mod-border" src="img/100_64.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Creegam">
+                    <img class="rank-mod-border" src="img/100_63.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="M4rwaan">
+                    <img class="rank-mod-border" src="img/100_72.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iLuvSG_">
+                    <img class="rank-mod-border" src="img/100_65.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xanaxjuice">
+                    <img class="rank-mod-border" src="img/100_67.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="qMabel">
+                    <img class="rank-mod-border" src="img/100_66.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iikimo">
+                    <img class="rank-mod-border" src="img/100_68.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iS3od_">
+                    <img class="rank-mod-border" src="img/100_71.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1M7mmD">
+                    <img class="rank-mod-border" src="img/100_70.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Yaazzeed">
+                    <img class="rank-mod-border" src="img/100_69.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="MindOfNasser">
+                    <img class="rank-mod-border" src="img/100_74.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Narwhql">
+                    <img class="rank-mod-border" src="img/100_82.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ebararh">
+                    <img class="rank-mod-border" src="img/100_73.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="3Mmr">
+                    <img class="rank-mod-border" src="img/100_76.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1LaB">
+                    <img class="rank-mod-border" src="img/100_77.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Aymann_">
+                    <img class="rank-mod-border" src="img/100_75.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="F2rris">
+                    <img class="rank-mod-border" src="img/100_78.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="TheDaddyJames">
+                    <img class="rank-mod-border" src="img/100_79.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Maarcii">
+                    <img class="rank-mod-border" src="img/100_80.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Ahmvd">
+                    <img class="rank-mod-border" src="img/100_81.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Y2men">
+                    <img class="rank-mod-border" src="img/100_90.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Sadlly">
+                    <img class="rank-mod-border" src="img/100_83.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Dizibre">
+                    <img class="rank-mod-border" src="img/100_84.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Refolt">
+                    <img class="rank-mod-border" src="img/100_85.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Flineer">
+                    <img class="rank-mod-border" src="img/100_86.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="MightyM7MD">
+                    <img class="rank-mod-border" src="img/100_87.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="KaaReeeM">
+                    <img class="rank-mod-border" src="img/100_88.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="RADVN">
+                    <img class="rank-mod-border" src="img/100_89.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ritclaw">
+                    <img class="rank-mod-border" src="img/100_91.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="unhealthily">
+                    <img class="rank-mod-border" src="img/100_100.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="DetectiveFahad">
+                    <img class="rank-mod-border" src="img/100_93.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="420syr1a">
+                    <img class="rank-mod-border" src="img/100_92.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_N3">
+                    <img class="rank-mod-border" src="img/100_96.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Zqvies">
+                    <img class="rank-mod-border" src="img/100_94.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="EVanDoskI">
+                    <img class="rank-mod-border" src="img/100_95.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Pepe_">
+                    <img class="rank-mod-border" src="img/100_97.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="FaRidok">
+                    <img class="rank-mod-border" src="img/100_99.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="8mhh">
+                    <img class="rank-mod-border" src="img/100_98.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Driction">
+                    <img class="rank-mod-border" src="img/100_101.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1RealFadi">
+                    <img class="rank-mod-border" src="img/100_102.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Requieem">
+                    <img class="rank-mod-border" src="img/100_104.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="GoldenGapples">
+                    <img class="rank-mod-border" src="img/100_105.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xDupzHell">
+                    <img class="rank-mod-border" src="img/100_103.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="DeeRx">
+                    <img class="rank-mod-border" src="img/100_111.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Wesccar">
+                    <img class="rank-mod-border" src="img/100_112.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Y_04">
+                    <img class="rank-mod-border" src="img/100_107.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xL2d">
+                    <img class="rank-mod-border" src="img/100_110.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Tz3bo">
+                    <img class="rank-mod-border" src="img/100_108.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="7re2a_YT">
+                    <img class="rank-mod-border" src="img/100_106.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="N15_">
+                    <img class="rank-mod-border" src="img/100_109.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Abdulaziz187">
+                    <img class="rank-mod-border" src="img/100_121.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Tibbz_BGamer">
+                    <img class="rank-mod-border" src="img/100_119.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Mshari">
+                    <img class="rank-mod-border" src="img/100_120.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="PT7">
+                    <img class="rank-mod-border" src="img/100_116.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="0hPqnos">
+                    <img class="rank-mod-border" src="img/100_117.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ImXann">
+                    <img class="rank-mod-border" src="img/100_118.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="m7mdxjw">
+                    <img class="rank-mod-border" src="img/100_115.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Fta7">
+                    <img class="rank-mod-border" src="img/100_113.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1_ST">
+                    <img class="rank-mod-border" src="img/100_114.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="7MZH">
+                    <img class="rank-mod-border" src="img/100_131.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1ForAGer">
+                    <img class="rank-mod-border" src="img/100_122.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="TheHicat">
+                    <img class="rank-mod-border" src="img/100_123.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="arbawii">
+                    <img class="rank-mod-border" src="img/100_124.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="FastRank">
+                    <img class="rank-mod-border" src="img/100_125.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="JustDrink_">
+                    <img class="rank-mod-border" src="img/100_128.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="SalemBayern_">
+                    <img class="rank-mod-border" src="img/100_126.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="phxnomenal">
+                    <img class="rank-mod-border" src="img/100_127.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xDmg">
+                    <img class="rank-mod-border" src="img/100_130.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="qPito">
+                    <img class="rank-mod-border" src="img/100_139.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iSolom">
+                    <img class="rank-mod-border" src="img/100_129.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xIMonster_Rj">
+                    <img class="rank-mod-border" src="img/100_133.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Tibbz_BGamer_">
+                    <img class="rank-mod-border" src="img/100_134.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="rixw1">
+                    <img class="rank-mod-border" src="img/100_132.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="imOgLoo">
+                    <img class="rank-mod-border" src="img/100_135.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mzh">
+                    <img class="rank-mod-border" src="img/100_136.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="0Da3s">
+                    <img class="rank-mod-border" src="img/100_137.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iRxv">
+                    <img class="rank-mod-border" src="img/100_138.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Banderr">
+                    <img class="rank-mod-border" src="img/100_151.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="inVertice">
+                    <img class="rank-mod-border" src="img/100_140.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Oxenaa">
+                    <img class="rank-mod-border" src="img/100_141.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="beyondviolets">
+                    <img class="rank-mod-border" src="img/100_142.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="S3rvox">
+                    <img class="rank-mod-border" src="img/100_143.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="DangPavel">
+                    <img class="rank-mod-border" src="img/100_146.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="w7r">
+                    <img class="rank-mod-border" src="img/100_144.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="3AmOdi_">
+                    <img class="rank-mod-border" src="img/100_145.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Jrx7">
+                    <img class="rank-mod-border" src="img/100_147.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ilybb0">
+                    <img class="rank-mod-border" src="img/100_158.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="PotatoSoublaki">
+                    <img class="rank-mod-border" src="img/100_148.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="lt1x">
+                    <img class="rank-mod-border" src="img/100_149.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Tostiebramkaas">
+                    <img class="rank-mod-border" src="img/100_150.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="vdhvm">
+                    <img class="rank-mod-border" src="img/100_152.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="IuseiLezs">
+                    <img class="rank-mod-border" src="img/100_153.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="STEEEEEVEEEE">
+                    <img class="rank-mod-border" src="img/100_154.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="lacvna">
+                    <img class="rank-mod-border" src="img/100_157.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="TheDrag_Xx">
+                    <img class="rank-mod-border" src="img/100_156.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_SpecialSA_">
+                    <img class="rank-mod-border" src="img/100_155.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_Vxpe">
+                    <img class="rank-mod-border" src="img/100_160.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="KingHOYT">
+                    <img class="rank-mod-border" src="img/100_159.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="91l7">
+                    <img class="rank-mod-border" src="img/100_162.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1M0ha">
+                    <img class="rank-mod-border" src="img/100_161.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iAhmedGG">
+                    <img class="rank-mod-border" src="img/100_163.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ImortalWqlkeR">
+                    <img class="rank-mod-border" src="img/100_165.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="vxom">
+                    <img class="rank-mod-border" src="img/100_164.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_R3">
+                    <img class="rank-mod-border" src="img/100_166.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Ravnly">
+                    <img class="rank-mod-border" src="img/100_167.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="X_Mah_X">
+                    <img class="rank-mod-border" src="img/100_176.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iA11">
+                    <img class="rank-mod-border" src="img/100_169.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="BlackOurs">
+                    <img class="rank-mod-border" src="img/100_168.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="yQuack">
+                    <img class="rank-mod-border" src="img/100_171.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Ittekimasu">
+                    <img class="rank-mod-border" src="img/100_170.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Ba1z">
+                    <img class="rank-mod-border" src="img/100_173.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AFG_progamer92">
+                    <img class="rank-mod-border" src="img/100_172.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Aiiden">
+                    <img class="rank-mod-border" src="img/100_174.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xiDayzer">
+                    <img class="rank-mod-border" src="img/100_175.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Futurezii">
+                    <img class="rank-mod-border" src="img/100_186.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Veshan">
+                    <img class="rank-mod-border" src="img/100_177.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="DaBabyFan">
+                    <img class="rank-mod-border" src="img/100_178.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="DetectiveFoxTY">
+                    <img class="rank-mod-border" src="img/100_180.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="InjjectoR">
+                    <img class="rank-mod-border" src="img/100_182.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="itzZa1D">
+                    <img class="rank-mod-border" src="img/100_179.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Dqrkfall">
+                    <img class="rank-mod-border" src="img/100_181.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1LoST_">
+                    <img class="rank-mod-border" src="img/100_184.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Omxr">
+                    <img class="rank-mod-border" src="img/100_183.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1DeVilz">
+                    <img class="rank-mod-border" src="img/100_194.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="A5oShnBaT">
+                    <img class="rank-mod-border" src="img/100_185.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Blood_Artz">
+                    <img class="rank-mod-border" src="img/100_187.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AbuA7md506">
+                    <img class="rank-mod-border" src="img/100_189.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xa7a">
+                    <img class="rank-mod-border" src="img/100_188.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="OREOBZ">
+                    <img class="rank-mod-border" src="img/100_190.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="M1M_">
+                    <img class="rank-mod-border" src="img/100_193.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="zAhmd">
+                    <img class="rank-mod-border" src="img/100_191.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="0Aix">
+                    <img class="rank-mod-border" src="img/100_192.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Loga_">
+                    <img class="rank-mod-border" src="img/100_202.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Demon_001">
+                    <img class="rank-mod-border" src="img/100_195.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AbduIlah">
+                    <img class="rank-mod-border" src="img/100_196.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="deathally">
+                    <img class="rank-mod-border" src="img/100_197.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="RealSG">
+                    <img class="rank-mod-border" src="img/100_199.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ToFy_">
+                    <img class="rank-mod-border" src="img/100_198.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="IxDjole">
+                    <img class="rank-mod-border" src="img/100_200.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1KhaleeD">
+                    <img class="rank-mod-border" src="img/100_201.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="SpecialAdel_">
+                    <img class="rank-mod-border" src="img/100_203.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="yff3">
+                    <img class="rank-mod-border" src="img/100_212.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="DarkA5_">
+                    <img class="rank-mod-border" src="img/100_205.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="FexoraNEP">
+                    <img class="rank-mod-border" src="img/100_204.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1L7NN">
+                    <img class="rank-mod-border" src="img/100_206.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Adam1_">
+                    <img class="rank-mod-border" src="img/100_207.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="nopals">
+                    <img class="rank-mod-border" src="img/100_208.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Raceth">
+                    <img class="rank-mod-border" src="img/100_210.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1A7mad1">
+                    <img class="rank-mod-border" src="img/100_209.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="OldAlone">
+                    <img class="rank-mod-border" src="img/100_211.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="RealA7md">
+                    <img class="rank-mod-border" src="img/100_221.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="0h_Roby">
+                    <img class="rank-mod-border" src="img/100_215.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1RE3">
+                    <img class="rank-mod-border" src="img/100_213.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="obaida123445">
+                    <img class="rank-mod-border" src="img/100_214.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="vinnythebot">
+                    <img class="rank-mod-border" src="img/100_216.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_b_i">
+                    <img class="rank-mod-border" src="img/100_218.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="wzii">
+                    <img class="rank-mod-border" src="img/100_217.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="BigZ3tr">
+                    <img class="rank-mod-border" src="img/100_219.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Kweng">
+                    <img class="rank-mod-border" src="img/100_222.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Megtit_Imad">
+                    <img class="rank-mod-border" src="img/100_232.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Mark_Gamer_YT_">
+                    <img class="rank-mod-border" src="img/100_220.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="d5qq">
+                    <img class="rank-mod-border" src="img/100_223.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="IF3MH">
+                    <img class="rank-mod-border" src="img/100_224.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="yosife_7Y">
+                    <img class="rank-mod-border" src="img/100_225.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="BaSiL_123">
+                    <img class="rank-mod-border" src="img/100_228.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AfootDiamond117">
+                    <img class="rank-mod-border" src="img/100_226.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="SamoXS">
+                    <img class="rank-mod-border" src="img/100_227.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Mjdra_call_ME">
+                    <img class="rank-mod-border" src="img/100_229.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mokgii">
+                    <img class="rank-mod-border" src="img/100_239.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="be6sho">
+                    <img class="rank-mod-border" src="img/100_230.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1_aq">
+                    <img class="rank-mod-border" src="img/100_231.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ImM7MAD">
+                    <img class="rank-mod-border" src="img/100_233.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="wl3d">
+                    <img class="rank-mod-border" src="img/100_234.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="rivez">
+                    <img class="rank-mod-border" src="img/100_237.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Cryslinq">
+                    <img class="rank-mod-border" src="img/100_235.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="c22l">
+                    <img class="rank-mod-border" src="img/100_236.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="tverdy">
+                    <img class="rank-mod-border" src="img/100_240.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Mythiques">
+                    <img class="rank-mod-border" src="img/100_247.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="s2lm">
+                    <img class="rank-mod-border" src="img/100_238.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Sweatly">
+                    <img class="rank-mod-border" src="img/100_242.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="cW6n">
+                    <img class="rank-mod-border" src="img/100_241.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="G3rryx">
+                    <img class="rank-mod-border" src="img/100_243.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Levaai">
+                    <img class="rank-mod-border" src="img/100_245.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="bota_69">
+                    <img class="rank-mod-border" src="img/100_244.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Mondoros">
+                    <img class="rank-mod-border" src="img/100_246.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="JustKreem">
+                    <img class="rank-mod-border" src="img/100_248.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="lareey">
+                    <img class="rank-mod-border" src="img/100_257.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="IxKimo">
+                    <img class="rank-mod-border" src="img/100_249.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Sinqx">
+                    <img class="rank-mod-border" src="img/100_250.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="manuelmaster">
+                    <img class="rank-mod-border" src="img/100_253.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="IR3DX">
+                    <img class="rank-mod-border" src="img/100_251.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="OttomanGrqndson">
+                    <img class="rank-mod-border" src="img/100_252.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mliodse">
+                    <img class="rank-mod-border" src="img/100_255.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ogm">
+                    <img class="rank-mod-border" src="img/100_254.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_Surfers_">
+                    <img class="rank-mod-border" src="img/100_256.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Serena_666">
+                    <img class="rank-mod-border" src="img/100_266.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="SpecialAdam_">
+                    <img class="rank-mod-border" src="img/100_258.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="BinDontCare">
+                    <img class="rank-mod-border" src="img/100_259.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mshyz">
+                    <img class="rank-mod-border" src="img/100_262.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Its_HighNoon">
+                    <img class="rank-mod-border" src="img/100_260.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="SirMedo_">
+                    <img class="rank-mod-border" src="img/100_261.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="90fa">
+                    <img class="rank-mod-border" src="img/100_263.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xLePerfect">
+                    <img class="rank-mod-border" src="img/100_264.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="D1ZZY0NE">
+                    <img class="rank-mod-border" src="img/100_265.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Sp0tzy_">
+                    <img class="rank-mod-border" src="img/100_271.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xiiRadi">
+                    <img class="rank-mod-border" src="img/100_267.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="real_wd">
+                    <img class="rank-mod-border" src="img/100_268.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="uh8e">
+                    <img class="rank-mod-border" src="img/100_269.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="i_Ym5">
+                    <img class="rank-mod-border" src="img/100_270.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="NotMoHqMeD__">
+                    <img class="rank-mod-border" src="img/100_273.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="9we">
+                    <img class="rank-mod-border" src="img/100_274.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="BigBossGhost">
+                    <img class="rank-mod-border" src="img/100_282.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="abd0_369">
+                    <img class="rank-mod-border" src="img/100_280.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mamdoh">
+                    <img class="rank-mod-border" src="img/100_276.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="refractionDuvo">
+                    <img class="rank-mod-border" src="img/100_279.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Bo3aShor">
+                    <img class="rank-mod-border" src="img/100_278.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="3au">
+                    <img class="rank-mod-border" src="img/100_272.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Just7MO">
+                    <img class="rank-mod-border" src="img/100_281.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Viva_1Vinci">
+                    <img class="rank-mod-border" src="img/100_275.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="LRYD">
+                    <img class="rank-mod-border" src="img/100_277.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="3zez">
+                    <img class="rank-mod-border" src="img/100_283.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="mshye">
+                    <img class="rank-mod-border" src="img/100_284.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xXBXLTXx">
+                    <img class="rank-mod-border" src="img/100_285.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="H2ris">
+                    <img class="rank-mod-border" src="img/100_286.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_xayu_">
+                    <img class="rank-mod-border" src="img/100_287.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Lunching">
+                    <img class="rank-mod-border" src="img/100_289.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Kuhimitsu">
+                    <img class="rank-mod-border" src="img/100_290.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="k6en">
+                    <img class="rank-mod-border" src="img/100_288.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="zCroDanger">
+                    <img class="rank-mod-border" src="img/100_292.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="2gfs">
+                    <img class="rank-mod-border" src="img/100_295.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="needheer">
+                    <img class="rank-mod-border" src="img/100_304.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_Jqmxs">
+                    <img class="rank-mod-border" src="img/100_306.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Tabby_Bhau">
+                    <img class="rank-mod-border" src="img/100_296.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_obx">
+                    <img class="rank-mod-border" src="img/100_297.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Neeres">
+                    <img class="rank-mod-border" src="img/100_291.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iHmKiller">
+                    <img class="rank-mod-border" src="img/100_293.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Lemfs">
+                    <img class="rank-mod-border" src="img/100_294.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="vBursT_">
+                    <img class="rank-mod-border" src="img/100_305.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="RealWayne">
+                    <img class="rank-mod-border" src="img/100_298.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="INFAMOUSEEE">
+                    <img class="rank-mod-border" src="img/100_301.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="aXav">
+                    <img class="rank-mod-border" src="img/100_300.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Changerr69">
+                    <img class="rank-mod-border" src="img/100_299.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_z2_">
+                    <img class="rank-mod-border" src="img/100_302.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="HM___">
+                    <img class="rank-mod-border" src="img/100_303.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="3rodi">
+                    <img class="rank-mod-border" src="img/100_315.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="kostasidk">
+                    <img class="rank-mod-border" src="img/100_307.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="EZKarDIOPalma">
+                    <img class="rank-mod-border" src="img/100_309.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="IDoubIe">
+                    <img class="rank-mod-border" src="img/100_308.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="sh5boo6">
+                    <img class="rank-mod-border" src="img/100_311.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="redcriper">
+                    <img class="rank-mod-border" src="img/100_310.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Draggn_">
+                    <img class="rank-mod-border" src="img/100_312.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="rqnkk">
+                    <img class="rank-mod-border" src="img/100_313.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="TheOnlyM7MAD">
+                    <img class="rank-mod-border" src="img/100_314.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xIIMnt7r">
+                    <img class="rank-mod-border" src="img/100_323.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Du7ym">
+                    <img class="rank-mod-border" src="img/100_317.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="PinCabbage32074">
+                    <img class="rank-mod-border" src="img/100_316.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="_iSkyla">
+                    <img class="rank-mod-border" src="img/100_318.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="xDiaa_levo">
+                    <img class="rank-mod-border" src="img/100_321.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AhmedPROGG">
+                    <img class="rank-mod-border" src="img/100_319.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Jarxay">
+                    <img class="rank-mod-border" src="img/100_320.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="vM6r">
+                    <img class="rank-mod-border" src="img/100_324.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="AwKTaM">
+                    <img class="rank-mod-border" src="img/100_322.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Millsap">
+                    <img class="rank-mod-border" src="img/100_332.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="1Derex">
+                    <img class="rank-mod-border" src="img/100_325.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="hsva">
+                    <img class="rank-mod-border" src="img/100_327.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Tetdeus">
+                    <img class="rank-mod-border" src="img/100_326.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="Alaam_FG">
+                    <img class="rank-mod-border" src="img/100_328.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="iiEsaTKing_">
+                    <img class="rank-mod-border" src="img/100_329.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="ByeByeByeBye">
+                    <img class="rank-mod-border" src="img/100_331.png" alt="">
+                </div>
+                            <div class="player-card-sm" data-toggle="tooltip" data-placement="top" title="cuz_himo">
+                    <img class="rank-mod-border" src="img/100_330.png" alt="">
+                </div>
+            
+            <script>
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
+        </div>
+    </div>
+<br><br>
+</div><script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        if (!getCookie('allowCookies')) {
+            var c_c_element = document.getElementById("c_c");
+            c_c_element.style.display = "block";
+        }
+    });
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function eraseCookie(name) {   
+        document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+
+    function cc_accept() {
+        setCookie('allowCookies', '1', 1000)
+        var c_c_element = document.getElementById("c_c");
+        c_c_element.style.display = "none";
+    }
+</script>
+
+<div class="col-md-3 col-sm-12" style="position: fixed;bottom: 0;left: 0;z-index: 1030;display: none;" dir="ltr" id="c_c">
+    <div class="toast bg-dark text-white w-100 mw-100" role="alert" data-autohide="false" style="background-color: #343a40 !important;">
+        <div class="toast-body p-4 d-flex flex-column">
+            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-outline-light mr-3" onclick="window.open('https://www.cookiesandyou.com/');">Learn more</button>
+                <button type="button" class="btn btn-success" onclick="cc_accept()">Accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row" style="direction: rtl;padding: 20px 0;">
+            <div class="col-lg-4">
+                <a href="/rules">القوانين</a><br>
+                <a href="/report">إبلاغ</a><br>
+                <a href="/appeal">طلب رفع الحظر</a><br>
+                <!--a href="/changeusername">نقل بيانات الإسم</a><br-->
+                <a href="/youtuber">تقديم طلب يوتيوبر</a><br>
+                <!--a href="/faq">الأسئلة المكررة</a><br-->
+            </div>
+            <div class="col-lg-4">
+                <!--<a href="#"><i class="fa fa-twitter"></i> Twitter</a><br>
+                <a href="#"><i class="fa fa-youtube"></i> Youtube</a><br>
+                <a href="#"><i class="fa fa-facebook-official"></i> Facebook</a><br>-->
+                <a href="https://instagram.com/BlocksMC"><i class="fa fa-instagram"></i> Instagram</a><br>
+                <a href="/general-terms">General Terms</a><br>
+                <a href="/privacy-policy">Privacy Policy</a><br>
+                <a href="/store-terms">Store Terms</a><br>
+            </div>
+            <div class="col-lg-4">
+            <img src="img/paygates.svg" style="width: 60%;padding-top: 5px;" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer-rights">
+    <p title="03:49:19AM 2022/03/20 - 0.012">© All Rights Reserved, BlocksMC</p>
+</div>
+<div id="onlineOff"></div>
+
+<script type="text/javascript">
+    setTimeout(function(){
+        $('#onlineOff').load('https://ccc.blocksmc.com/online.php?page=players&token=c7fad6557473bd73418a416d4b6c304d');
+    },100);
+    setInterval(function(){
+        $('#onlineOff').load('https://ccc.blocksmc.com/online.php?page=players&token=c7fad6557473bd73418a416d4b6c304d');
+    },5000);
+    $(document).ready(function() {
+        $('div.player-card').click(function() {
+            var name = $(this).find('p').text();
+            window.location.href = "/player/"+name;
+        });
+        $('div.player-card-sm').click(function () {
+            var name = $(this).attr('data-original-title');
+            window.location.href = "/player/"+name;
+        });
+    });
+</script>
+
+
+
+
+</body></html>
